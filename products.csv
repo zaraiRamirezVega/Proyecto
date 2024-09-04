@@ -1,0 +1,64 @@
+id,nombre,precio,descripcion,url_imagen,categoria,me_gusta,recomendado_para
+1,Smartphone X,299.99,Smartphone de alta gama,https://oechsle.vteximg.com.br/arquivos/ids/12625942-1000-1000/image-cf4c86b0499548b1a0a6624b99517aa4.jpg?v=638050458317470000,Electronica,250,hombre
+2,Portátil Y,499.99,Portátil ligero,https://peru.solutekla.com/photo/1/hp/portatiles/portatil_core_i5_8gb/portatil_core_i5_8gb_0001,Electronica,300,mujer
+3,Auriculares Z,59.99,Auriculares con cancelación de ruido,https://img4.dhresource.com/webp/m/0x0/f3/albu/km/s/19/475170fa-bf61-4ea1-8eb3-8f094c42b6e6.jpg,Accesorios,150,hombre
+4,Licuadora Pro,29.99,Licuadora potente,https://production-tailoy-repo-magento-statics.s3.amazonaws.com/imagenes/872x872/productos/i/l/i/licuadora-oster-15-l-2-velocidades-blstkagwrd-blanco-61409-default-1.jpg,Hogar,120,mujer
+5,Reloj Inteligente Alpha,199.99,Reloj inteligente con seguimiento de fitness,https://promart.vteximg.com.br/arquivos/ids/7118854-1000-1000/image-526c21fcc2fc40c49ca858cbfb26954d.jpg?v=638223677021000000,Electrónica,210,hombre
+6,Tablet Beta,399.99,Tablet de 10 pulgadas,https://i5.walmartimages.com/seo/2022-Apple-10-9-inch-iPad-Wi-Fi-64GB-Pink-10th-Generation_4fdae443-4f60-4a3e-9efe-12758bf5f128.f4d7333626b4e6b27e8be25d1f698373.jpeg,Electrónica,180,mujer
+7,Cafetera Espresso,149.99,Máquina de café espresso,https://lacuisineappliances.pe/wp-content/uploads/2022/07/ECF01PKEU-220.webp,Hogar,160,mujer
+8,Consola de Videojuegos,499.99,Consola de videojuegos de nueva generación,https://jotastore.pe/wp-content/uploads/2024/06/Consola-GD10-Pro-1.jpg.webp,Electronica,400,hombre
+9,Televisor 4K,799.99,Televisor Ultra HD,https://home.ripley.com.pe/Attachment/WOP_5/2018290224318/2018290224318_2.jpg,Electronica,350,hombre0
+10,Ratón Inalámbrico,29.99,Ratón inalámbrico ergonómico,https://www.sercoplus.com/20638-medium_default/mouse-inalambrico-logitech-m187-mini-pin.jpg,Accesorios,90,mujer
+11,Hervidor Eléctrico,39.99,Hervidor de agua rápido,https://m.media-amazon.com/images/I/51cY5zDwUaL.jpg,Hogar,130,mujer
+12,Pulsera de Fitness,99.99,Pulsera de monitoreo de salud,https://s.alicdn.com/@sc04/kf/Hc1026fed1e794aa88ebbacc1b879e9b2c.jpg_720x720q50.jpg,Accesorios,170,hombre
+13,Freidora de Aire,89.99,Cocción sin aceite,https://i5.walmartimages.com.mx/mg/gm/3pp/asr/30c1b571-8617-47e6-93e7-1f3857388a8f.4294d20a79490f9dc449b693f782de96.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF,Hogar,140,mujer
+14,Cámara Digital,599.99,Cámara de alta resolución,https://oechsle.vteximg.com.br/arquivos/ids/14243371-1000-1000/image-d36db000752f48e980a8c2a88e5306bc.jpg?v=638155756197200000,Electronica,210,hombre
+15,Altavoz Bluetooth,49.99,Altavoz portátil,https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/2415/PMP20000349115/full_image-1.jpeg,Electronica,180,mujer
+16,Aspiradora Robot,299.99,Aspiradora automática,https://promart.vteximg.com.br/arquivos/ids/8028309-1000-1000/84170.jpg?v=638550350701700000,Hogar,160,mujer
+17,Microondas,129.99,Microondas de cocción rápida,https://img.uline.com/is/image/uline/HD_4059?$Mobile_SI$,Hogar,150,hombre
+18,Termostato Inteligente,199.99,Controlador de temperatura,https://http2.mlstatic.com/D_Q_NP_964433-MPE69789655109_062023-O.webp,Electronica,140,hombre
+19,Lector de Libros Electrónico,129.99,Lector de libros digital,https://i.blogs.es/ee397a/222/450_1000.jpg,Electronica,110,mujer
+20,Máquina de Coser,79.99,Máquina de coser para el hogar,https://electro365.es/3052-large_default/brother-rh127-maquina-de-coser.jpg,Hogar,90,mujer
+21,Cepillo de Dientes Eléctrico,49.99,Cepillo de dientes recargable,https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2021/04/08/16178370852356.jpg,Accesorios,120,hombre
+22,Licuadora Compacta,49.99,Licuadora compacta,https://oechsle.vteximg.com.br/arquivos/ids/14223351-1000-1000/image-f0b1e542b2df42d5a9d610b366290f32.jpg?v=638153312267200000,Hogar,100,mujer
+23,Dron,349.99,Dron con cámara HD,https://i.blogs.es/e64415/mavic--1-/1366_2000.jpg,Electronica,180,hombre
+24,Patinete Eléctrico,299.99,Patinete ligero,https://electyum.com/wp-content/uploads/2021/11/patinete-electrico-ecoxtrem-bison-gris-800w.webp,Electronica,200,hombre
+25,Soporte para Portátil,39.99,Soporte ergonómico,https://m.media-amazon.com/images/I/71QU6lRYwVL.jpg,Accesorios,110,mujer
+26,Auriculares Inalámbricos,59.99,Auriculares con cancelación de ruido,https://oechsle.vteximg.com.br/arquivos/ids/16141182-1000-1000/image-1bda7165b87a4f42b2e643e76e7003fd.jpg?v=638298297682430000,Accesorios,150,hombre
+27,Bombilla Inteligente,29.99,Bombilla controlada por voz,https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/2155/PMP00002950835/full_image-1.jpeg,Electronica,100,mujer
+28,Molinillo de Café,39.99,Molinillo eléctrico,https://severin.pe/cdn/shop/files/Disenosintitulo_11.jpg?v=1700577846,Hogar,110,hombre
+29,Mezcladora de Pie,199.99,Mezcladora de alto rendimiento,https://m.media-amazon.com/images/I/51oecsNUsbL._AC_SL1001_.jpg,Hogar,140,mujer
+30,Afeitadora Eléctrica,79.99,Afeitadora recargable,https://oechsle.vteximg.com.br/arquivos/ids/4025298-1000-1000/image-3749ee04b4694b138e2b8043aaef6b03.jpg?v=637600940525530000,Accesorios,130,hombre
+31,Secador de Pelo,49.99,Secador de pelo de secado rápido,https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/2354/PMP00001878208/imagen2-1.jpeg,Accesorios,110,mujer
+32,Cargador Portátil,39.99,Batería portátil de alta capacidad,https://http2.mlstatic.com/D_NQ_NP_930059-MLV69857292455_062023-O.webp,Accesorios,120,hombre
+33,Teclado Inalámbrico,69.99,Teclado mecánico,https://i5.walmartimages.com.mx/mg/gm/3pp/asr/f72150aa-e2fe-461f-872c-a157712163a7.ee697bd3fe415af315cf851919866dbd.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF,Accesorios,140,mujer
+34,Stick de Streaming,49.99,Dispositivo de streaming HD,https://multimedia.bbycastatic.ca/multimedia/products/500x500/157/15756/15756969.jpg,Electronica,150,hombre
+35,Purificador de Aire,149.99,Purificador de aire para habitaciones,https://oechsle.vteximg.com.br/arquivos/ids/16874778-1000-1000/image-468ca9daa97a4c5394ed531cd395a7d7.jpg?v=638363932325600000,Hogar,130,mujer
+36,Báscula de Cocina,19.99,Báscula digital,https://http2.mlstatic.com/D_NQ_NP_964728-MLA45104837260_032021-O.webp,Hogar,90,hombre
+37,Manta Eléctrica,59.99,Manta con calefacción,https://http2.mlstatic.com/D_NQ_NP_839293-MCO72121445786_102023-O.webp,Hogar,120,mujer
+38,Timbre Inteligente,129.99,Timbre Wi-Fi,https://mivoot.com/gt/wp-content/uploads/2023/04/NHC-D100-Nexxt-Solutions-Connectivity-Incluye-sirena.jpg,Electronica,110,hombre
+39,Olla a Presión,99.99,Olla multifuncional,https://promart.vteximg.com.br/arquivos/ids/7433186-1000-1000/image-38ce79b447dd4ca79fc62282b7ebe3af.jpg?v=638279820055270000,Hogar,140,mujer
+40,Espejo Inteligente,249.99,Espejo interactivo,https://ae01.alicdn.com/kf/Scfd4b8e5b7a64a1ea7717344bcd074413/Espejo-inteligente-personalizado-para-ba-o-dispositivo-m-gico-de-inducci-n-del-cuerpo-humano-pantalla.jpg,Electrónica,130,mujer
+41,Bicicleta de Ejercicio,399.99,Equipo de fitness,https://oechsle.vteximg.com.br/arquivos/ids/15311669-1000-1000/image-8a3bed3c1ddc40f3905c5762ce903ac0.jpg?v=638281789174000000,Accesorios,190,hombre
+42,Esterilla de Yoga,29.99,Esterilla antideslizante,https://http2.mlstatic.com/D_NQ_NP_651792-MPE74872831884_032024-O.webp,Accesorios,140,mujer
+43,Sartén Eléctrica,69.99,Gran superficie de cocción,https://promart.vteximg.com.br/arquivos/ids/7508918-1000-1000/130685.jpg?v=638319633054730000,Hogar,110,hombre
+44,Deshumidificador,199.99,Deshumidificador para habitaciones,https://toyotomi.cl/wp-content/uploads/2019/05/TD-Z110.jpg,Hogar,120,mujer
+45,Set de Maletas,299.99,Conjunto de maletas de viaje,https://m.media-amazon.com/images/I/814Ne2xbNXL._AC_SL1500_.jpg,Accesorios,180,mujer
+46,Carpa para Acampar,149.99,Carpa para 4 personas,https://http2.mlstatic.com/D_NQ_NP_938034-MCO50030058286_052022-O.webp,Accesorios,160,hombre
+47,Parrilla Eléctrica,89.99,Parrilla para interiores,https://promart.vteximg.com.br/arquivos/ids/6838333-1000-1000/image-39db5049ba4c4b1a9f392680da52b41a.jpg?v=638144970839470000,Hogar,140,mujer
+48,Báscula Inteligente,79.99,Báscula para el cuerpo,https://http2.mlstatic.com/D_NQ_NP_899050-MLM76819246931_062024-O.webp,Electronica,130,hombre
+49,Extractor de Jugos,99.99,Extractor de jugos en frío,https://back.panafoto.com/media/catalog/product/cache/22adb41f3f66ba957b3b3b7b0df44fe6/1/4/148564-01.jpg,Hogar,150,mujer
+50,Impresora 3D,599.99,Impresora de alta resolución,https://http2.mlstatic.com/D_NQ_NP_899286-MLA53300717741_012023-O.webp,Electronica,210,hombre
+51,Filtro de Agua,29.99,Jarra filtradora,https://www.lfiltrosloja.com.br/image/cache/data/xM5CE9rIeo23-500x500.jpg,Hogar,90,mujer
+52,Cargador Solar,49.99,Panel solar portátil,https://http2.mlstatic.com/D_NQ_NP_940617-MLC70424629853_072023-O.webp,Accesorios,100,hombre
+53,Enchufe Inteligente,19.99,Enchufe con control remoto,https://http2.mlstatic.com/D_NQ_NP_690268-CBT75733753268_042024-O.webp,Electronica,80,mujer
+54,Cortacésped Robot,999.99,Cortacésped automático,https://www.tugarden.com/4362-superlarge_default/robot-cortacesped-automower-550.jpg,Hogar,300,hombre
+55,Monitor para Bebés,149.99,Monitor Wi-Fi,https://m.media-amazon.com/images/I/614v9OrvlGL.jpg,Electronica,130,mujer
+56,Comedero para Mascotas,89.99,Comedero automático,https://http2.mlstatic.com/D_NQ_NP_788323-CBT75672677133_042024-O.webp,Hogar,120,mujer
+57,Bicicleta Eléctrica,999.99,Bicicleta plegable,https://ae01.alicdn.com/kf/Sb32e03b01e4a4b35be31ade3ce7a1032k/Bicicleta-de-Monta-a-el-ctrica-plegable-Engwe-EP-2-Pro-bici-de-llanta-ancha-ruedas.jpg,Electrónica,270,hombre
+58,Envasadora al Vacío,79.99,Sistema de conservación de alimentos,https://grondoy.com/img/productos/xl/Empacadora-al-vacio-doble-campana%20(4).jpg,Hogar,110,mujer
+59,Sistema de Cine en Casa,499.99,Sonido envolvente,https://i.blogs.es/2224d6/htp-bd36sf/650_1200.jpg,Electronica,230,hombre
+60,Chimenea Eléctrica,399.99,Calefactor con ambiente,https://http2.mlstatic.com/D_Q_NP_875024-MPE69872693886_062023-O.webp,Hogar,190,mujer
+61,Aire Acondicionado,299.99,Unidad portátil,https://3lperu.com/wp-content/uploads/2021/10/carga-de-gas-para-split-aire-acondicionado-D_NQ_NP_916847-MLA26619046313_012018-F.jpeg,Hogar,150,hombre
+62,Cerradura Inteligente,199.99,Sistema de entrada sin llave,https://m.media-amazon.com/images/I/719sDLHOnaL.jpg,Electronica,130,mujer
+
