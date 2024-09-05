@@ -4,8 +4,18 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .forms import RegisterForm, LoginForm
 
+
+
 CSV_FILE_PATH = 'users.csv'
 PRODUCTS_FILE_PATH = 'products.csv'
+from django.shortcuts import redirect
+
+def logout(request):
+    try:
+        del request.session['username']
+    except KeyError:
+        pass
+    return redirect('home')
 
 def home(request):
     if request.method == 'POST':
@@ -33,7 +43,7 @@ def handle_login(request):
                 if row[0] == username and row[1] == password:
                     # Redirect to products view with the username as a query parameter
                     return redirect(f'/products/?user={username}')
-            return HttpResponse("Error: Invalid username or password")
+            return HttpResponse("Error: Usuario o contraseña incorrectos")
     return redirect('home')
 
 def handle_register(request):

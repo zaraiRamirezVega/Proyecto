@@ -4,18 +4,18 @@
     <title>Login/Register</title>
 </head>
 <body>
-    <h2>Login</h2>
+    <h2>Iniciar Sesion</h2>
     <form method="post">
         {% csrf_token %}
         {{ login_form.as_p }}
-        <button type="submit" name="login">Login</button>
+        <button type="submit" name="login">Ingresar</button>
     </form>
     
-    <h2>Register</h2>
+    <h2>¿No tienes una cuenta?</h2>
     <form method="post">
         {% csrf_token %}
         {{ register_form.as_p }}
-        <button type="submit" name="register">Register</button>
+        <button type="submit" name="register">Registrate</button>
     </form>
 </body>
 </html>

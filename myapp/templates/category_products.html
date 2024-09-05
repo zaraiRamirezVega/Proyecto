@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ category }} Products</title>
+    <title>Productos en {{ category }}</title>
 </head>
 <body>
-    <h1>Products in {{ category }}</h1>
+    <h1>Productos en {{ category }}</h1>
 
-    <!-- Section for Top 5 Popular Products -->
-    <h2>Top 5 Popular Products</h2>
+    <!-- Sección para los 5 productos más populares -->
+    <h2>Top 5 Productos Populares</h2>
     <ul>
         {% for product in top_popular %}
             <li>
                 <h2>{{ product.nombre }}</h2>
-                <p>Price: ${{ product.precio }}</p>
-                <p>Description: {{ product.descripcion }}</p>
+                <p>Precio: ${{ product.precio }}</p>
+                <p>Descripción: {{ product.descripcion }}</p>
                 <img src="{{ product.url_imagen }}" alt="{{ product.nombre }}" width="200">
-                <p>Category: {{ product.categoria }}</p>
+                <p>Categoría: {{ product.categoria }}</p>
                 <p>Likes: {{ product.me_gusta }}</p>
-                <p>Recommended for: {{ product.recomendado_para }}</p>
+                <p>Recomendado para: {{ product.recomendado_para }}</p>
             </li>
         {% empty %}
-            <p>No popular products available in this category.</p>
+            <p>No hay productos populares disponibles en esta categoría.</p>
         {% endfor %}
     </ul>
 
-    <!-- Section for Cheapest Products -->
-    <h2>Cheapest Products</h2>
+    <!-- Sección para productos más baratos -->
+    <h2>Productos Más Baratos</h2>
     <ul>
         {% for product in cheapest %}
             <li>
                 <h2>{{ product.nombre }}</h2>
-                <p>Price: ${{ product.precio }}</p>
-                <p>Description: {{ product.descripcion }}</p>
+                <p>Precio: ${{ product.precio }}</p>
+                <p>Descripción: {{ product.descripcion }}</p>
                 <img src="{{ product.url_imagen }}" alt="{{ product.nombre }}" width="200">
-                <p>Category: {{ product.categoria }}</p>
+                <p>Categoría: {{ product.categoria }}</p>
                 <p>Likes: {{ product.me_gusta }}</p>
-                <p>Recommended for: {{ product.recomendado_para }}</p>
+                <p>Recomendado para: {{ product.recomendado_para }}</p>
             </li>
         {% empty %}
-            <p>No cheap products available in this category.</p>
+            <p>No hay productos baratos disponibles en esta categoría.</p>
         {% endfor %}
     </ul>
 
-    <!-- Section for First 20 Products -->
-    <h2>Products List (First 20)</h2>
+    <!-- Sección para los primeros 20 productos -->
+    <h2>Lista de Productos (Primeros 20)</h2>
     <ul>
         {% for product in product_list %}
             <li>
                 <h2>{{ product.nombre }}</h2>
-                <p>Price: ${{ product.precio }}</p>
-                <p>Description: {{ product.descripcion }}</p>
+                <p>Precio: ${{ product.precio }}</p>
+                <p>Descripción: {{ product.descripcion }}</p>
                 <img src="{{ product.url_imagen }}" alt="{{ product.nombre }}" width="200">
-                <p>Category: {{ product.categoria }}</p>
+                <p>Categoría: {{ product.categoria }}</p>
                 <p>Likes: {{ product.me_gusta }}</p>
-                <p>Recommended for: {{ product.recomendado_para }}</p>
+                <p>Recomendado para: {{ product.recomendado_para }}</p>
             </li>
         {% empty %}
-            <p>No products available in this category.</p>
+            <p>No hay productos disponibles en esta categoría.</p>
         {% endfor %}
     </ul>
 
-    <a href="{% url 'products' %}">Back to Product Overview</a>
+    <a href="{% url 'products' %}">Volver a la visión general de productos</a>
 
 </body>
 </html>

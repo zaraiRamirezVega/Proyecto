@@ -1,77 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Product Overview</title>
+    <title>Visión General de Productos</title>
 </head>
 <body>
-    <h1>Product Overview</h1>
+    <h1>Visión General de Productos</h1>
 
-    <!-- Section for Category Selection -->
-    <h2>Select Category</h2>
+    <!-- Sección seleccionar categoría y cerrar sesión -->
+    <h2>Seleccionar Categoría</h2>
     <ul>
-        <li><a href="{% url 'category_products' 'Electronica' %}">Electronics</a></li>
-        <li><a href="{% url 'category_products' 'Hogar' %}">Home</a></li>
-        <li><a href="{% url 'category_products' 'Accesorios' %}">Accessories</a></li>
+        <li><a href="{% url 'category_products' 'Electronica' %}">Electrónica</a></li>
+        <li><a href="{% url 'category_products' 'Hogar' %}">Hogar</a></li>
+        <li><a href="{% url 'category_products' 'Accesorios' %}">Accesorios</a></li>
+        <li><a href="{% url 'logout' %}">Cerrar sesión</a></li>
     </ul>
 
-    <!-- Section for Popular Products -->
-    <h2>Popular Products (Top 10)</h2>
+    <!-- Sección para productos populares -->
+    <h2>Productos Populares</h2>
     <ul>
         {% for product in popular %}
             <li>
                 <h2>{{ product.nombre }}</h2>
-                <p>Price: ${{ product.precio }}</p>
-                <p>Description: {{ product.descripcion }}</p>
+                <p>Precio: ${{ product.precio }}</p>
+                <p>Descripción: {{ product.descripcion }}</p>
                 <img src="{{ product.url_imagen }}" alt="{{ product.nombre }}" width="200">
-                <p>Category: {{ product.categoria }}</p>
+                <p>Categoría: {{ product.categoria }}</p>
                 <p>Likes: {{ product.me_gusta }}</p>
-                <p>Recommended for: {{ product.recomendado_para }}</p>
+                <p>Recomendado para: {{ product.recomendado_para }}</p>
             </li>
         {% empty %}
-            <p>No popular products available.</p>
+            <p>No hay productos populares disponibles.</p>
         {% endfor %}
     </ul>
 
-    <!-- Section for Products on Offer -->
-    <h2>Products on Offer (7 Cheapest Products)</h2>
+    <!-- Sección para productos en oferta -->
+    <h2>Productos en Oferta (7 Productos Más Baratos)</h2>
     <ul>
         {% for product in on_offer %}
             <li>
                 <h2>{{ product.nombre }}</h2>
-                <p>Price: ${{ product.precio }}</p>
-                <p>Description: {{ product.descripcion }}</p>
+                <p>Precio: ${{ product.precio }}</p>
+                <p>Descripción: {{ product.descripcion }}</p>
                 <img src="{{ product.url_imagen }}" alt="{{ product.nombre }}" width="200">
-                <p>Category: {{ product.categoria }}</p>
+                <p>Categoría: {{ product.categoria }}</p>
                 <p>Likes: {{ product.me_gusta }}</p>
-                <p>Recommended for: {{ product.recomendado_para }}</p>
-                <p><strong>On Offer!</strong></p>
+                <p>Recomendado para: {{ product.recomendado_para }}</p>
+                <p><strong>¡En Oferta!</strong></p>
             </li>
         {% empty %}
-            <p>No products on offer.</p>
+            <p>No hay productos en oferta.</p>
         {% endfor %}
     </ul>
 
-    <!-- Section for Recommended Products -->
-    <h2>Recommended Products for You</h2>
+    <!-- Sección para productos recomendados -->
+    <h2>Productos Recomendados Para Ti</h2>
     <ul>
         {% for product in recommended %}
             <li>
                 <h2>{{ product.nombre }}</h2>
-                <p>Price: ${{ product.precio }}</p>
-                <p>Description: {{ product.descripcion }}</p>
+                <p>Precio: ${{ product.precio }}</p>
+                <p>Descripción: {{ product.descripcion }}</p>
                 <img src="{{ product.url_imagen }}" alt="{{ product.nombre }}" width="200">
-                <p>Category: {{ product.categoria }}</p>
+                <p>Categoría: {{ product.categoria }}</p>
                 <p>Likes: {{ product.me_gusta }}</p>
-                <p>Recommended for: {{ product.recomendado_para }}</p>
+                <p>Recomendado para: {{ product.recomendado_para }}</p>
             </li>
         {% empty %}
-            <p>No recommended products available.</p>
+            <p>No hay productos recomendados disponibles.</p>
         {% endfor %}
     </ul>
 
-    <!-- Link to go back to Product Overview -->
-    <a href="{% url 'products' %}">Back to Product Overview</a>
-
 </body>
 </html>
+
 
