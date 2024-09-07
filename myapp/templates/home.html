@@ -1,82 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login/Register</title>
-    <style>
-        body {
-            background: linear-gradient(135deg, #fbc2eb 0%, #a18cd1 100%); /* Gradiente rosa-lila */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            color: #333;
-        }
-        .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            max-width: 400px;
-            width: 100%;
-            text-align: center;
-        }
-        h2 {
-            color: #6a1b9a; /* Lila oscuro */
-            margin-bottom: 20px;
-        }
-        form {
-            margin-bottom: 20px;
-        }
-        input[type="text"], input[type="password"] {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-sizing: border-box;
-        }
-        button {
-            width: 100%;
-            padding: 12px;
-            border: none;
-            border-radius: 8px;
-            background: linear-gradient(135deg, #ff4081, #ff80ab); /* Gradiente rosa */
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        button:hover {
-            background: linear-gradient(135deg, #ff80ab, #ff4081); /* Invertir gradiente al pasar mouse */
-        }
-        .divider {
-            margin: 20px 0;
-            font-size: 14px;
-            color: #999;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>Modern Login/Register</title>
 </head>
+
 <body>
+
     <div class="container">
-        <h2>Iniciar Sesión</h2>
-        <form method="post">
-            {% csrf_token %}
-            {{ login_form.as_p }}
-            <button type="submit" name="login">Ingresar</button>
-        </form>
+        <!-- Formulario de Registro -->
+        <div class="form-container sign-up">
+            <form method="post">
+                {% csrf_token %}
+                <h1>Crear Cuenta</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>o usa tu correo electrónico para registrarte</span>
+                {{ register_form.as_p }}
+                <button type="submit" name="register">Registrarse</button>
+            </form>
+        </div>
 
-        <div class="divider">o</div>
-
-        <h2>¿No tienes una cuenta?</h2>
-        <form method="post">
-            {% csrf_token %}
-            {{ register_form.as_p }}
-            <button type="submit" name="register">Regístrate</button>
-        </form>
+        <!-- Formulario de Inicio de Sesión -->
+        <div class="form-container sign-in">
+            <form method="post">
+                {% csrf_token %}
+                <h1>Iniciar Sesión</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>o usa tu correo electrónico y contraseña</span>
+                {{ login_form.as_p }}
+                
+                <button type="submit" name="login">Iniciar Sesión</button>
+            </form>
+        </div>
     </div>
+
+
+   
+        
+
 </body>
+
 </html>
+
+
+
+
+
