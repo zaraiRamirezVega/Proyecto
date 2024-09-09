@@ -1,66 +1,79 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos en {{ category }}</title>
+    <link rel="stylesheet" href="{% static 'css/products.css' %}">
 </head>
 <body>
     <h1>Productos en {{ category }}</h1>
 
-    <!-- Sección para los 5 productos más populares -->
-    <h2>Top 5 Productos Populares</h2>
-    <ul>
-        {% for product in top_popular %}
-            <li>
-                <h2>{{ product.nombre }}</h2>
-                <p>Precio: ${{ product.precio }}</p>
-                <p>Descripción: {{ product.descripcion }}</p>
-                <img src="{{ product.url_imagen }}" alt="{{ product.nombre }}" width="200">
-                <p>Categoría: {{ product.categoria }}</p>
-                <p>Likes: {{ product.me_gusta }}</p>
-                <p>Recomendado para: {{ product.recomendado_para }}</p>
-            </li>
-        {% empty %}
-            <p>No hay productos populares disponibles en esta categoría.</p>
-        {% endfor %}
-    </ul>
+    <div class="container">
+        <!-- Sección para los 5 productos más populares -->
+        <div class="section">
+            <h2>Top 5 Productos Populares</h2>
+            <div class="product-grid">
+                {% for product in top_popular %}
+                    <div class="product-item">
+                        <h2>{{ product.nombre }}</h2>
+                        <p>Precio: ${{ product.precio }}</p>
+                        <p>Descripción: {{ product.descripcion }}</p>
+                        <img src="{{ product.url_imagen }}" alt="{{ product.nombre }}">
+                        <p>Categoría: {{ product.categoria }}</p>
+                        <p>Likes: {{ product.me_gusta }}</p>
+                        <p>Recomendado para: {{ product.recomendado_para }}</p>
+                    </div>
+                {% empty %}
+                    <p>No hay productos populares disponibles en esta categoría.</p>
+                {% endfor %}
+            </div>
+        </div>
 
-    <!-- Sección para productos más baratos -->
-    <h2>Productos Más Baratos</h2>
-    <ul>
-        {% for product in cheapest %}
-            <li>
-                <h2>{{ product.nombre }}</h2>
-                <p>Precio: ${{ product.precio }}</p>
-                <p>Descripción: {{ product.descripcion }}</p>
-                <img src="{{ product.url_imagen }}" alt="{{ product.nombre }}" width="200">
-                <p>Categoría: {{ product.categoria }}</p>
-                <p>Likes: {{ product.me_gusta }}</p>
-                <p>Recomendado para: {{ product.recomendado_para }}</p>
-            </li>
-        {% empty %}
-            <p>No hay productos baratos disponibles en esta categoría.</p>
-        {% endfor %}
-    </ul>
+        <!-- Sección para productos más baratos -->
+        <div class="section">
+            <h2>Productos Más Baratos</h2>
+            <div class="product-grid">
+                {% for product in cheapest %}
+                    <div class="product-item">
+                        <h2>{{ product.nombre }}</h2>
+                        <p>Precio: ${{ product.precio }}</p>
+                        <p>Descripción: {{ product.descripcion }}</p>
+                        <img src="{{ product.url_imagen }}" alt="{{ product.nombre }}">
+                        <p>Categoría: {{ product.categoria }}</p>
+                        <p>Likes: {{ product.me_gusta }}</p>
+                        <p>Recomendado para: {{ product.recomendado_para }}</p>
+                    </div>
+                {% empty %}
+                    <p>No hay productos baratos disponibles en esta categoría.</p>
+                {% endfor %}
+            </div>
+        </div>
 
-    <!-- Sección para los primeros 20 productos -->
-    <h2>Lista de Productos (Primeros 20)</h2>
-    <ul>
-        {% for product in product_list %}
-            <li>
-                <h2>{{ product.nombre }}</h2>
-                <p>Precio: ${{ product.precio }}</p>
-                <p>Descripción: {{ product.descripcion }}</p>
-                <img src="{{ product.url_imagen }}" alt="{{ product.nombre }}" width="200">
-                <p>Categoría: {{ product.categoria }}</p>
-                <p>Likes: {{ product.me_gusta }}</p>
-                <p>Recomendado para: {{ product.recomendado_para }}</p>
-            </li>
-        {% empty %}
-            <p>No hay productos disponibles en esta categoría.</p>
-        {% endfor %}
-    </ul>
+        <!-- Sección para los primeros 20 productos -->
+        <div class="section">
+            <h2>Lista de Productos (Primeros 20)</h2>
+            <div class="product-grid">
+                {% for product in product_list %}
+                    <div class="product-item">
+                        <h2>{{ product.nombre }}</h2>
+                        <p>Precio: ${{ product.precio }}</p>
+                        <p>Descripción: {{ product.descripcion }}</p>
+                        <img src="{{ product.url_imagen }}" alt="{{ product.nombre }}">
+                        <p>Categoría: {{ product.categoria }}</p>
+                        <p>Likes: {{ product.me_gusta }}</p>
+                        <p>Recomendado para: {{ product.recomendado_para }}</p>
+                    </div>
+                {% empty %}
+                    <p>No hay productos disponibles en esta categoría.</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 
-    <a href="{% url 'products' %}">Volver a la visión general de productos</a>
-
+    <div class="back-link">
+        <a href="{% url 'products' %}">Volver a la visión general de productos</a>
+    </div>
 </body>
 </html>
