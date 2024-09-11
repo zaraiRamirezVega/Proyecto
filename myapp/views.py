@@ -84,7 +84,7 @@ def products(request):
     }
     
     try:
-        with open(PRODUCTS_FILE_PATH, 'r') as csvfile:
+        with open(PRODUCTS_FILE_PATH, 'r' , encoding='utf-8') as csvfile:
             reader = csv.DictReader(csvfile)
             all_products = list(reader)
             
@@ -111,7 +111,7 @@ def products(request):
 
 def category_products(request, category):
     try:
-        with open(PRODUCTS_FILE_PATH, 'r') as csvfile:
+        with open(PRODUCTS_FILE_PATH, 'r' , encoding='utf-8') as csvfile:
             reader = csv.DictReader(csvfile)
             filtered_products = [product for product in reader if product['categoria'] == category]
             
